@@ -1,0 +1,14 @@
+<resources>
+    <dimen name="margin_padding_size_small">8dp</dimen>
+    <dimen name="margin_padding_size_medium">16dp</dimen>
+    <dimen name="margin_padding_size_large">32dp</dimen>
+
+    <dimen name="text_size_display_4">112sp</dimen>
+    <dimen name="text_size_display_3">56sp</dimen>
+    <dimen name="text_size_display_2">45sp</dimen>
+    <dimen name="text_size_display_1">34sp</dimen>
+    <dimen name="text_size_headline">24sp</dimen>
+    <dimen name="text_size_title">20sp</dimen>
+
+    <dimen name="header_height">128dp</dimen>
+</resources>

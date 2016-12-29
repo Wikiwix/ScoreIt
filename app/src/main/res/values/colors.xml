@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016 SBG Apps
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<resources>
+    <color name="white">@color/md_white_1000</color>
+    <color name="transparent">#00000000</color>
+    <color name="divider_color">#1F000000</color>
+
+    <color name="color_primary">@color/lacandon_500</color>
+    <color name="color_primary_dark">@color/lacandon_700</color>
+    <color name="color_primary_400">@color/lacandon_400</color>
+    <color name="color_accent">@color/cooties_500</color>
+
+    <color name="light_grey">@color/md_grey_100</color>
+    <color name="dark_grey">@color/md_grey_800</color>
+
+    <color name="game_won">@color/md_green_400</color>
+    <color name="game_lost">@color/md_red_400</color>
+
+    <color name="lacandon_50">#e0ffa3</color>
+    <color name="lacandon_100">#c7ff57</color>
+    <color name="lacandon_200">#b4ff1f</color>
+    <color name="lacandon_300">#8fd600</color>
+    <color name="lacandon_400">#7ab800</color>
+    <color name="lacandon_500">#669900</color>
+    <color name="lacandon_600">#527a00</color>
+    <color name="lacandon_700">#3d5c00</color>
+    <color name="lacandon_800">#293d00</color>
+    <color name="lacandon_900">#141f00</color>
+    <color name="lacandon_A100">#e0ffa3</color>
+    <color name="lacandon_A200">#c7ff57</color>
+    <color name="lacandon_A400">#7ab800</color>
+    <color name="lacandon_A700">#3d5c00</color>
+
+    <color name="cooties_50">#ffffff</color>
+    <color name="cooties_100">#fbe4ce</color>
+    <color name="cooties_200">#f7c89a</color>
+    <color name="cooties_300">#f2a558</color>
+    <color name="cooties_400">#ef953b</color>
+    <color name="cooties_500">#ed861f</color>
+    <color name="cooties_600">#dc7712</color>
+    <color name="cooties_700">#bf670f</color>
+    <color name="cooties_800">#a3580d</color>
+    <color name="cooties_900">#87490b</color>
+    <color name="cooties_A100">#ffffff</color>
+    <color name="cooties_A200">#fbe4ce</color>
+    <color name="cooties_A400">#ef953b</color>
+    <color name="cooties_A700">#bf670f</color>
+</resources>

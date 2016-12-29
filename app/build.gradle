@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    compileOptions {
+        sourceCompatibility = rootProject.ext.sourceCompatibilityVersion
+        targetCompatibility = rootProject.ext.targetCompatibilityVersion
+    }
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 54
+        versionName '5.0.0'
+        vectorDrawables.generatedDensities = ['hdpi', 'xxhdpi']
+        jackOptions { enabled true }
+    }
+
+    signingConfigs {
+        def signingFile = file("signing.properties")
+        def signingProperties = new Properties()
+
+        release {
+            if (signingFile.exists()) {
+                signingProperties.load(signingFile.newInputStream())
+                storeFile file(signingProperties["store.file"])
+                storePassword signingProperties["store.password"]
+                keyAlias signingProperties["key.alias"]
+                keyPassword signingProperties["key.password"]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable false
+            jniDebuggable false
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'LICENSE.txt'
+    }
+}
+
+dependencies {
+    compile project(':scoreit-core')
+
+    compile rootProject.ext.libraries.appCompat
+    compile rootProject.ext.libraries.androidSupport
+    compile rootProject.ext.libraries.designSupport
+    compile rootProject.ext.libraries.percentSupport
+    compile rootProject.ext.libraries.recyclerviewSupport
+    compile rootProject.ext.libraries.guava
+    compile rootProject.ext.libraries.mosby
+    compile rootProject.ext.libraries.butterknife
+
+    annotationProcessor rootProject.ext.libraries.butterknifeCompiler
+}
